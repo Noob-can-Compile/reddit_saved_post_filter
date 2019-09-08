@@ -103,7 +103,7 @@ class Reddit:
     def write_csv(self):
         #TODO: instead of overwriting allo user to select mode - write new file or append to existing
         print('Writing data to CSV..')
-        output = csv.writer(open("test.csv", "w", newline=''))
+        output = csv.writer(open("test.csv", "w", encoding="utf-8", newline=''))
         output.writerows(self.posts)
         print('Data successfully written.')
 
